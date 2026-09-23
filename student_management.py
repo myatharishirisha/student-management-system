@@ -61,11 +61,43 @@ def add_student_marks():
     for student in list1:
         if student["Id"] == Student_id:
 
-            math = int(input("enter marks for Math: "))
-            science = int(input("Enter marks for Science: "))
-            english = int(input("Enter marks for English: "))
-            computer = int(input("Enter marks for Computer: "))
-            history = int(input("Enter marks for History: "))
+
+            while True:
+                math = int(input("Enter marks for Math: "))
+
+                if 0 <= math <= 100:
+                    break
+                else:
+                    print("Invalid marks. Enter marks between 0 and 100.")
+
+            while True:
+                science = int(input("Enter marks for Science: "))
+
+                if 0 <= science <= 100:
+                    break
+                else:
+                    print("Invalid marks. Enter marks between 0 and 100.")
+            while True:
+                english = int(input("Enter marks for english: "))
+            
+                if 0 <= english <= 100:
+                    break
+                else:
+                    print("Invalid marks. Enter marks between 0 and 100.")
+            while True:
+                computer = int(input("Enter marks for computer: "))
+            
+                if 0 <= computer <= 100:
+                    break
+                else:
+                    print("Invalid marks. Enter marks between 0 and 100.")
+            while True:
+                history = int(input("Enter marks for history: "))
+            
+                if 0 <= history <= 100:
+                    break
+                else:
+                    print("Invalid marks. Enter marks between 0 and 100.")
 
             marks = {
                 "Math": math,
